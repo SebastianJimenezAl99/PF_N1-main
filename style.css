@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 3%;
+}
+
+
+
+#ejecucion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 10px;
+}
+
+#ejecucion div{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+#agregacion{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#agregacion input{
+    border-radius: 10px;
+    height: 50px;
+
+}
+
+#text  {
+    width: 80%;
+    margin-right: 10px;
+   
+}
+
+#textButton{
+    width: 20%;
+    margin-left: 10px;
+}
+
+#buttonDiv button{
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#buttonDiv {
+    width: 70%;
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+
+#buttonDiv button:hover{
+    border-bottom: 2px solid #0d6efd;
+    
+} 
+
+.activado{
+    border: 1px;
+    border-bottom: 2px solid #0d6efd;
+
+}
+
+.inactivo{
+    border: 1px;
+}
+
+#resultado{
+    width: 70%;
+    margin: 0;
+    
+}
+
+#resultado div{
+   
+    margin-bottom: 10px;
+    
+}
+
+.ilLista{
+    display: flex;
+    justify-content: space-between;
+}
+
+.basurita-inactiva{
+    color: gray;
+    display: none;
+}
+
+.basurita-activa{
+    color: gray;
+    
+}
+
+.deleteJust{
+    color: white;
+}
+
+.basurita-activa:hover{
+    cursor: pointer;
+    color: rgb(151, 151, 151);
+}
+
+.posicionDelBotonEliminar{
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <!-- Link to Script -->
+  <script src="./main.js" defer></script>
+
+  <!-- Link to CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f406e3edda.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>To-Do App</title>
+</head>
+<body>
+  <div class="container contenedor">
+    <div id="titulo">
+      <h2>#todo</h2>
+    </div>
+    <div id="ejecucion" class="container">
+      <div id="buttonDiv">
+        <button id="all" class="activado">All</button>
+        <button id="active" class="inactivo">Active</button>
+        <button id="completed" class="inactivo">Completed</button>
+      </div>
+
+      <div id="agregacion">
+        <div id="text"> 
+        <input type="text" class="form-control" placeholder="add details">
+        </div>
+        <div id="textButton">
+          <input class="form-control btn btn-primary" type="button" value="Add">
+        </div>
+      </div>
+
+      <div id="resultado">
+        <div>
+          <label for="">
+            <input class="form-check-input" type="checkbox" name="Hola" id="" value="Prueba">
+            Opcion 1
+          </label>
+        </div>
+        <div>
+          <label for="">
+            <input class="form-check-input" type="checkbox" name="Hola" id="" value="Prueba">
+            Opcion 1
+          </label>
+        </div>
+        <div>
+          <label for="">
+            <input class="form-check-input" type="checkbox" name="Hola" id="" value="Prueba">
+            Opcion 1
+          </label>
+        </div>
+      </div>
+      <div id="divBotonEliminarTodo" class="posicionDelBotonEliminar">
+        <button class="btn btn-danger""><i class="fa-solid fa-trash deleteJust"></i> delete all</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
