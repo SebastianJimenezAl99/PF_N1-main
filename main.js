@@ -130,7 +130,13 @@ function addTask() {
       }
       
       objTask.id = idSiguiente+1;
-      objTask.title = inputAddTask.value;
+      let title = inputAddTask.value;
+      if (typeof title === 'string') {
+        objTask.title = title.charAt(0).toUpperCase() + title.slice(1);
+      }else{
+        objTask.title = title;
+      }
+      
     
       tasks.push(objTask);
       localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -138,7 +144,12 @@ function addTask() {
       mostrarContenidoSegunLaUbicacion(ubicacion);
     }else{
       objTask.id = idSiguiente+1;
-      objTask.title = inputAddTask.value;
+      let title = inputAddTask.value;
+      if (typeof title === 'string') {
+        objTask.title = title.charAt(0).toUpperCase() + title.slice(1);
+      }else{
+        objTask.title = title;
+      }
       tasks =[objTask];
       localStorage.setItem('tasks', JSON.stringify(tasks));
       inputAddTask.value="";
