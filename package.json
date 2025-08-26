@@ -1,0 +1,25 @@
+{
+  "name": "pf_n1-main",
+  "version": "1.0.0",
+  "description": "Bienvenido al proyecto final del nivel 1. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas instrucciones se tomarán en cuenta para la evaluación del proyecto.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:html": "jest --reporters=default --reporters=jest-html-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianJimenezAl99/PF_N1-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianJimenezAl99/PF_N1-main/issues"
+  },
+  "homepage": "https://github.com/SebastianJimenezAl99/PF_N1-main#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^4.3.0"
+  }
+}
