@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/SebastianJimenezAl99/PF_N1-main#readme",
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
     "jest": "^29.7.0",
     "jest-html-reporter": "^4.3.0"
   }

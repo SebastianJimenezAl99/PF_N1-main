@@ -73,7 +73,7 @@ function addTask(title,tasks) {
     }
     
   }
-
+ 
 
   // Funcion para borrar todas las tareas
 function deleteAll(tasks) {
@@ -96,3 +96,4 @@ function deleteAll(tasks) {
   //mostrarContenidoSegunLaUbicacion(ubicacion);
   return tasks;
 }
+
