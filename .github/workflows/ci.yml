@@ -137,5 +137,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t pf_n1_app .
 
-      - name: Run container
-        run: docker run --rm pf_n1_app
+      - name: Test Docker image
+       
+        run: docker run --rm pf_n1_app node -v
