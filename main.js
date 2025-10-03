@@ -1,5 +1,3 @@
-
-
 /* Los siguientes nombres de funciones son una sugerencia de funciones que necesitarás en tu programa,
 sin embargo, no te limites solo a estas funciones. Crea tantas como consideres necesarias.
 
@@ -16,7 +14,7 @@ La estructura de cada objeto "tarea" es la siguiente:
 let ubicacion = 1;
 //funcion para mostra segun el filtro
 function mostrarContenidoSegunLaUbicacion(ubi) {
-  const divBotonEliminarTodo = document.querySelector('#divBotonEliminarTodo');
+  let divBotonEliminarTodo = document.querySelector('#divBotonEliminarTodo');
   if (ubi == 1) {
     mostrarTarea();
     divBotonEliminarTodo.style.display = "none";
@@ -39,7 +37,9 @@ const botonAll = document.querySelector('#all');
 const botonActive = document.querySelector('#active');
 const botonCompleted = document.querySelector('#completed');
 const divAgregacion = document.querySelector('#agregacion');
+let divBotonEliminarTodo = document.querySelector('#divBotonEliminarTodo');
 const buttonDeleteAll = document.querySelector('#divBotonEliminarTodo button');
+
 botonAll.addEventListener('click',()=>{
   mostrarTarea();
   botonAll.classList.remove('inactivo');
@@ -160,7 +160,6 @@ function addTask() {
     alert('El campo add details no debe estas vacio');
   }
   
-  
 }
 
 //MOSTRAR TODAS LAS TAREAS 
@@ -207,7 +206,6 @@ function filterUncompleted() {
   
 }
 
-
 //FUNCION PARA CONFIRMAR TAREAS
 function checkTasks(){
   const tasks = JSON.parse(localStorage.getItem('tasks'));
@@ -240,16 +238,11 @@ function checkTasks(){
   })
 }
 
-
-
-
-
 //FUNCION PARA BORRAR TAREA UNA POR UNA
-
 let control = 0;
 function mostrarBotonBorrar(ubi) {
   const tasks = JSON.parse(localStorage.getItem('tasks'));
-  botonesBorrar = document.querySelectorAll('.fa-solid')
+  let botonesBorrar = document.querySelectorAll('.fa-solid')
   if (ubi == 3) {
     
     botonesBorrar.forEach(botonBorrar => {
@@ -286,7 +279,6 @@ function mostrarBotonBorrar(ubi) {
   
 }
 
-
 buttonDeleteAll.addEventListener('click',deleteAll)
 // Funcion para borrar todas las tareas
 function deleteAll() {
@@ -308,6 +300,3 @@ function deleteAll() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
   mostrarContenidoSegunLaUbicacion(ubicacion);
 }
-
-
-

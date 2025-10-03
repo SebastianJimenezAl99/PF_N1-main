@@ -1,11 +1,11 @@
 {
   "name": "pf_n1-main",
   "version": "1.0.0",
-  "description": "Bienvenido al proyecto final del nivel 1. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas instrucciones se tomarán en cuenta para la evaluación del proyecto.",
+  "description": "Bienvenido al proyecto final del nivel 1. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel.",
   "main": "main.js",
   "scripts": {
-    "test": "jest",
-    "test:html": "jest --reporters=default --reporters=jest-html-reporter"
+    "test": "jest --coverage --reporters=default --reporters=jest-junit --reporters=jest-html-reporter",
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,17 @@
     "eslint": "^9.36.0",
     "globals": "^16.4.0",
     "jest": "^29.7.0",
-    "jest-html-reporter": "^4.3.0"
+    "jest-html-reporter": "^4.3.0",
+    "jest-junit": "^16.0.0"
+  },
+  "jest-html-reporter": {
+    "pageTitle": "Test Report",
+    "outputPath": "reports/test-report.html",
+    "includeFailureMsg": true,
+    "includeConsoleLog": true
+  },
+  "jest-junit": {
+    "outputDirectory": "reports/junit",
+    "outputName": "junit.xml"
   }
 }

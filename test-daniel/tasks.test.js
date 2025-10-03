@@ -1,4 +1,4 @@
-const deleteAll = require('./tasks');
+const { deleteAll } = require('../taskFunctions');
 
 describe('Función deleteAll', () => {
   test('debería eliminar todas las tareas completadas', () => {
@@ -37,7 +37,6 @@ describe('Función deleteAll', () => {
     expect(deleteAll(tasks)).toEqual([]);
   });
 
-  
   test('debería devolver un arreglo vacío si recibe null', () => {
     expect(deleteAll(null)).toEqual([]);
   });
@@ -75,18 +74,5 @@ describe('Función deleteAll', () => {
     }));
     const expected = tasks.filter(task => !task.completed);
     expect(deleteAll(tasks)).toEqual(expected);
-  });
-
-  test('debería devolver todas las tareas (debería fallar)', () => {
-  const tasks = [
-    { id: 1, description: 'Hacer la compra', completed: true },
-    { id: 2, description: 'Estudiar', completed: false }
-  ];
-  const expected = tasks; // Espera todas las tareas, pero deleteAll las filtra
-  expect(deleteAll(tasks)).toEqual(expected);
-  });
-
-  test('debería lanzar un error con null (debería fallar)', () => {
-  expect(() => deleteAll(null)).toThrow();
   });
 });
