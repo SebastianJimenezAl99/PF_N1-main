@@ -4,7 +4,7 @@
   "description": "Bienvenido al proyecto final del nivel 1. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel.",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage --reporters=default --reporters=jest-junit --reporters=jest-html-reporter",
+    "test": "npx jest --coverage --reporters=default --reporters=jest-junit --reporters=jest-html-reporter",
     "lint": "eslint . --ext .js"
   },
   "repository": {
